@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="cabecalho">
+            <div>
+                <h1>Calculadora Básica</h1>
+            </div>
+        </div>
+    </header>
+
+    <div id="tela">
+        <div id="conta">
+            <p>
+
+            </p>
+        </div>
+        <hr>
+        <div id="res">
+            <p>
+
+            </p>
+        </div>
+    </div>
+
+    <div id="calculadora">
+
+        <div class="operacoes">
+            <div id="divDivisao" class="numero">
+                <button id="divisao" onclick="teclaDivisao()">/</button>
+            </div>
+            <div id="divMultiplicacao" class="numero">
+                <button id="multiplicacao" onclick="teclaMultiplicacao()">*</button>
+            </div>
+            <div id="divSubtracao" class="numero">
+                <button id="subtracao" onclick="teclaSubtracao()">-</button>
+            </div>
+            <div id="divReset" class="numero">
+                <button id="reset" onclick="teclaReset()">CE</button>
+            </div>
+        </div>
+
+        <div id="teclado-numerico">
+            <div class="operacoes flex">
+                <div id="divSete" class="numero">
+                    <button id="sete" onclick="teclaSete()">7</button>
+                </div>
+                <div id="divOito" class="numero">
+                    <button id="oito" onclick="teclaOito()">8</button>
+                </div>
+                <div id="divNove" class="numero">
+                    <button id="nove" onclick="teclaNove()">9</button>
+                </div>
+                <div id="divSoma" class="numero">
+                    <button id="soma" onclick="teclaSoma()">+</button>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div id="divQuatro" class="numero">
+                    <button id="quatro" onclick="teclaQuatro()">4</button>
+                </div>
+                <div id="divCinco" class="numero">
+                    <button id="cinco" onclick="teclaCinco()">5</button>
+                </div>
+                <div id="divSeis" class="numero">
+                    <button id="seis" onclick="teclaSeis()">6</button>
+                </div>
+            </div>
+
+            <div class="operacoes flex">
+                <div id="divUm" class="numero">
+                    <button id="um" onclick="teclaUm()">1</button>
+                </div>
+                <div id="divDois" class="numero">
+                    <button id="dois" onclick="teclaDois()">2</button>
+                </div>
+                <div id="divTres" class="numero">
+                    <button id="tres" onclick="teclaTres()">3</button>
+                </div>
+                <div id="divIgualdade" class="numero">
+                    <button id="calcular" onclick="teclaCalcular()">=</button>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div id="divZero" class="zero">
+                    <button id="zero" onclick="teclaZero()">0</button>
+                </div>
+                <div id="divVirgula" class="numero">
+                    <button id="virgula" onclick="teclaVirgula()">,</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
