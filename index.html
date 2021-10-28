@@ -37,13 +37,13 @@
 
         <div class="operacoes">
             <div id="divDivisao" class="numero">
-                <button id="divisao" onclick="teclaDivisao()">/</button>
+                <button id="divisao" onclick="handleWithOperationKeyPress('/')">/</button>
             </div>
             <div id="divMultiplicacao" class="numero">
-                <button id="multiplicacao" onclick="teclaMultiplicacao()">*</button>
+                <button id="multiplicacao" onclick="handleWithOperationKeyPress('*')">*</button>
             </div>
             <div id="divSubtracao" class="numero">
-                <button id="subtracao" onclick="teclaSubtracao()">-</button>
+                <button id="subtracao" onclick="handleWithOperationKeyPress('-')">-</button>
             </div>
             <div id="divReset" class="numero">
                 <button id="reset" onclick="teclaReset()">CE</button>
@@ -53,40 +53,40 @@
         <div id="teclado-numerico">
             <div class="operacoes flex">
                 <div id="divSete" class="numero">
-                    <button id="sete" onclick="teclaSete()">7</button>
+                    <button id="sete" onclick="handleWithKeyPress(7)">7</button>
                 </div>
                 <div id="divOito" class="numero">
-                    <button id="oito" onclick="teclaOito()">8</button>
+                    <button id="oito" onclick="handleWithKeyPress(8)">8</button>
                 </div>
                 <div id="divNove" class="numero">
-                    <button id="nove" onclick="teclaNove()">9</button>
+                    <button id="nove" onclick="handleWithKeyPress(9)">9</button>
                 </div>
                 <div id="divSoma" class="numero">
-                    <button id="soma" onclick="teclaSoma()">+</button>
+                    <button id="soma" onclick="handleWithOperationKeyPress('+')">+</button>
                 </div>
             </div>
 
             <div class="flex">
                 <div id="divQuatro" class="numero">
-                    <button id="quatro" onclick="teclaQuatro()">4</button>
+                    <button id="quatro" onclick="handleWithKeyPress(4)">4</button>
                 </div>
                 <div id="divCinco" class="numero">
-                    <button id="cinco" onclick="teclaCinco()">5</button>
+                    <button id="cinco" onclick="handleWithKeyPress(5)">5</button>
                 </div>
                 <div id="divSeis" class="numero">
-                    <button id="seis" onclick="teclaSeis()">6</button>
+                    <button id="seis" onclick="handleWithKeyPress(6)">6</button>
                 </div>
             </div>
 
             <div class="operacoes flex">
                 <div id="divUm" class="numero">
-                    <button id="um" onclick="teclaUm()">1</button>
+                    <button id="um" onclick="handleWithKeyPress(1)">1</button>
                 </div>
                 <div id="divDois" class="numero">
-                    <button id="dois" onclick="teclaDois()">2</button>
+                    <button id="dois" onclick="handleWithKeyPress(2)">2</button>
                 </div>
                 <div id="divTres" class="numero">
-                    <button id="tres" onclick="teclaTres()">3</button>
+                    <button id="tres" onclick="handleWithKeyPress(3)">3</button>
                 </div>
                 <div id="divIgualdade" class="numero">
                     <button id="calcular" onclick="teclaCalcular()">=</button>
@@ -95,10 +95,10 @@
 
             <div class="flex">
                 <div id="divZero" class="zero">
-                    <button id="zero" onclick="teclaZero()">0</button>
+                    <button id="zero" onclick="handleWithKeyPress(0)">0</button>
                 </div>
                 <div id="divVirgula" class="numero">
-                    <button id="virgula" onclick="teclaVirgula()">,</button>
+                    <button id="virgula">,</button>
                 </div>
             </div>
 
